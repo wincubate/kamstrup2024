@@ -1,0 +1,14 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net6.0</TargetFramework>
+    <AssemblyName>Wincubate.CS10.Part1.Slide10</AssemblyName>
+    <RootNamespace>Wincubate.CS10.Part1.Slide10</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\Data\Data.csproj" />
+  </ItemGroup>
+
+</Project>

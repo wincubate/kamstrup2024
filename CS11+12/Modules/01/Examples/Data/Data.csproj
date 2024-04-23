@@ -1,0 +1,9 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.1</TargetFramework>
+    <AssemblyName>Wincubate.CS10.Part1.Data</AssemblyName>
+    <RootNamespace>Wincubate.CS10.Data</RootNamespace>
+  </PropertyGroup>
+
+</Project>

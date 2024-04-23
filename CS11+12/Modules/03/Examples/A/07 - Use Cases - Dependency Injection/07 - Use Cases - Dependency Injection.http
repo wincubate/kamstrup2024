@@ -1,0 +1,6 @@
+@Wincubate.CS12.Slide07DI_HostAddress = http://localhost:5227
+
+GET {{Wincubate.CS12.Slide07DI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

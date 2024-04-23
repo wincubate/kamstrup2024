@@ -1,0 +1,6 @@
+@Wincubate.Module05.WebApiDtos_HostAddress = http://localhost:5034
+
+GET {{Wincubate.Module05.WebApiDtos_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
