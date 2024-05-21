@@ -1,0 +1,6 @@
+@ShortR.Api_HostAddress = https://localhost:7044
+
+GET {{ShortR.Api_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
