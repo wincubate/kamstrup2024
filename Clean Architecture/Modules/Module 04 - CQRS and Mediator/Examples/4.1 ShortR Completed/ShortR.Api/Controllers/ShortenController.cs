@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using ShortR.Application;
 using ShortR.Contracts;
+using ShortR.Domain;
 
 namespace ShortR.Api.Controllers;
 
@@ -27,12 +28,18 @@ public class ShortenController : ControllerBase
     {
         string resource = $"https://localhost:7044/goto/{requestDto.Code}";
 
-        var result = await _shortenCommandService.ShortenAsync(
+        var shortenedUrl = await _shortenCommandService.ShortenAsync(
             requestDto.Code,
             requestDto.LongUrl
         );
 
-        return Created(resource, result);
+        var response = new ShortenResponseDto
+        {
+            Id = shortenedUrl.Id.ToString(),
+            ResultingUrl = shortenedUrl.LongUri.ToString(),
+            Created = shortenedUrl.Created
+        };
+        return Created(resource, response);
     }
 
     [HttpGet("/goto/{code}")]
